@@ -253,21 +253,25 @@ The system is suitable for demonstration, training, supervisory assessment simul
 
 ---
 
-# **7. Model Performance Visuals**
+# **9. Model Performance Visuals**
 
 The following figures provide empirical evidence of model behaviour and triage performance. Artifacts were generated from the ML and ensemble outputs and are included in `/plots`.
 
-**Confusion Matrix**
+**ROC Curve**
 
-![Confusion Matrix](plots/confusion_matrix.png)
+![ROC Curve](plots/ml_upgrade_roc_curve.png)
 
-**ROC Curve (STR binary)**
+**PR Curve**
 
-![ROC Curve](plots/roc_curve.png)
+![Precision-Recall Curve](plots/ml_upgrade_pr_curve.png)
 
-**Precision–Recall Curve (STR binary)**
+**SHAP Summary**
 
-![Precision-Recall Curve](plots/pr_curve.png)
+![SHAP Summary](plots/shap_summary.png)
+
+**Transaction Heatmap**
+
+![Transaction Heatmap](plots/tx_heatmap.png)
 
 **Classification Report (summary)**
 
@@ -277,7 +281,7 @@ The model classification report (micro/macro averages and per-class precision/re
 
 ---
 
-# **8. Case Studies: Investigator Case Files**
+# **10. Case Studies: Investigator Case Files**
 
 Below are three anonymized, high-quality case summaries selected from the top ensemble scores. Each case includes the key signals, SHAP-driven explanation, and recommended next steps for investigation.
 
@@ -334,7 +338,7 @@ Below are three anonymized, high-quality case summaries selected from the top en
 
 ---
 
-# **9. Appendix**
+# **11. Appendix**
 
 ### **Generated Artifacts**
 
