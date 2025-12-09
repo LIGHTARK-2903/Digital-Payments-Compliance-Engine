@@ -1,0 +1,42 @@
+﻿version: "rules-2025-12-10-v1"
+rules:
+  high_value:
+    high_value_threshold: 100000.0
+    weight: 80
+  non_kyc_large:
+    non_kyc_amount_threshold: 10000.0
+    weight: 70
+  rtgs_small:
+    rtgs_minimum_indicator: 200000.0
+    weight: 30
+  sanctions:
+    weight: 100
+  velocity:
+    velocity_count_window_minutes: 10
+    velocity_tx_count_threshold: 5
+    weight: 40
+  structuring:
+    structuring_window_hours: 24
+    structuring_split_count: 6
+    structuring_small_amount: 20000
+    weight: 50
+  dormant_spike:
+    dormant_spike_days: 90
+    dormant_trigger_amount: 5000
+    weight: 45
+  time_of_day:
+    unusual_start_hour: 0
+    unusual_end_hour: 5
+    time_of_day_min_amount: 1000
+    weight: 20
+  round_number:
+    round_multiple: 1000
+    weight: 15
+  reversal_loop:
+    reversal_loop_count: 4
+    weight: 60
+
+# thresholds for final flags
+str_threshold: 120
+high_risk_threshold: 80
+medium_threshold: 40
